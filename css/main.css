@@ -4,3 +4,81 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+.wrapper {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.row {
+	overflow: auto;
+}
+
+html {
+	text-align:center;
+}
+
+nav, li {
+	text-align:center;
+	padding:20px;
+}
+
+ul {
+	padding:none;
+}
+
+li {
+	display:inline-block;
+	list-style-type:none;
+	vertical-align:middle;
+}
+
+nav img {
+	align-content:center;
+}
+
+h1, h2, h3 {
+	text-transform:uppercase;
+}
+
+h1 {
+	font-weight:300;
+}
+
+#h1-txt {
+	font-weight:bold;
+	color:#EB008B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.team-photo {
+	width:260px;
+	height:260px;
+	align-content:center;
+}
+
+.team-photo:first-child {
+	background:url(../img/1.jpg) no-repeat;
+}
+
+.team-photo:nth-child(2) {
+	background:url(../img/2.jpg) no-repeat;
+}
+
+.team-photo:nth-child(3) {
+	background:url(../img/3.jpg) no-repeat;
+}
+
+.team-photo:last-child {
+	background:url(../img/4.jpg) no-repeat;
+}
