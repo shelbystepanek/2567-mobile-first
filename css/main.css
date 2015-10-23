@@ -1,8 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {
+html {
 	font-family: 'Josefin Sans', sans-serif;
+	font-size:20px;
+}
+
+.fluid,
+.fluid img {
+  min-width: 100%;
+  width: 100%;
 }
 
 .wrapper {
@@ -12,10 +19,45 @@ body {
 
 .row {
 	overflow: auto;
+	align-content:center;
 }
 
 html {
 	text-align:center;
+}
+
+
+/*  BLACK BACKGROUNDs  */
+#hero {
+	background-color:black;
+	color:white;
+	padding:20px;
+}
+
+#hero a {
+	color: white;
+    padding: 15px;
+    background-color: #EB008B;
+    margin: 10px;
+    display: inline-block;
+}
+
+#hero a:hover {
+	color:#EB008B;
+	padding:15px;
+	background-color:white;
+	margin:10px;
+	display: inline-block;
+}
+
+#black-bg {
+	background-color:black;
+	color:white;
+	padding:10px;
+}
+
+p {
+	margin-top: 0px;
 }
 
 nav, li {
@@ -24,7 +66,7 @@ nav, li {
 }
 
 ul {
-	padding:none;
+	padding:0;
 }
 
 li {
@@ -37,29 +79,17 @@ nav img {
 	align-content:center;
 }
 
-h1, h2, h3 {
-	text-transform:uppercase;
+a {
+	text-decoration: none;
+	color:black;
 }
 
-h1 {
-	font-weight:300;
-}
-
-#h1-txt {
-	font-weight:bold;
+header nav a:hover, footer nav a:hover {
 	color:#EB008B;
 }
 
 
-
-
-
-
-
-
-
-
-
+/*  IMAGERY  */
 
 .team-photo {
 	width:260px;
@@ -81,4 +111,76 @@ h1 {
 
 .team-photo:last-child {
 	background:url(../img/4.jpg) no-repeat;
+}
+
+
+.facebook {
+	background:url(../img/facebook.png) no-repeat;
+}
+
+.twitter {
+	background:url(../img/twitter.png) no-repeat;
+}
+
+.facebook, .twitter {
+	display:inline-block;
+	width:22px;
+	height:22px;
+	margin: 5px;
+}
+
+.facebook a, .twitter a {
+	color:none;
+	background-color:none;
+	height:22px;
+	width:22px;
+	background-position: 0 0;
+	background:no-repeat;
+}
+
+.facebook:hover, .twitter:hover {
+	background-position:0 -22px;
+}
+
+
+
+/*  TYPOGRAPHY  */
+
+h1, h2, h3, a {
+	text-transform:uppercase;
+}
+
+#h1-txt {
+	font-weight:bold;
+	font-size:5rem;
+	color:#EB008B;
+}
+
+h1, h3 {
+	margin-bottom:0;
+}
+
+h2 {
+	font-weight:bold;
+	font-size:2.5rem;
+}
+
+
+@media screen and (max-width: 480px) {
+
+h1 {
+	font-weight:300;
+	font-size:3rem;
+}
+
+h2 {
+	font-weight:bold;
+	font-size:2.5rem;
+}
+
+h3 {
+	font-weight:300;
+	font-size:1.5rem;
+}
+
 }
